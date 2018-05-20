@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp">
+
+    <LinearLayout
+        style="@style/LinearLayout"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        >
+
+        <TextView
+            style="@style/TextView"
+            android:id="@+id/section_name"
+            android:background="@drawable/circle"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            tools:text="fashion" />
+
+        <TextView
+            style="@style/TextView"
+            android:id="@+id/headline"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="LALALA LA LA AL ALALALsxaskjdaksjdfhzksjdhakjsdhas" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LinearLayout"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            style="@style/TextView"
+            android:id="@+id/date"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"
+            tools:text="Mar 6, 2010" />
+
+        <TextView
+            style="@style/TextView"
+            android:id="@+id/author"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp"
+            tools:text="Tea Zivkovic" />
+    </LinearLayout>
+</LinearLayout>
