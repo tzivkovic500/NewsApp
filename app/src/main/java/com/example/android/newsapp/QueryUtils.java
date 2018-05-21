@@ -178,12 +178,7 @@ public final class QueryUtils {
                 }
                 // Extract the value for the key called "url"
                 String url = currentNews.getString("webUrl");
-                // Extract the value for the key called "fields" -> "thumbnail"
-                String image = currentNews.getJSONObject("fields").getString("thumbnail");
-                if(image == "") {
-                    image = "http://via.placeholder.com/500x500";
-                }
-                // Create a new {@link Earthquake} object with the magnitude, location, time,
+                // Create a new {@link News} object with the title, sectionName, author, date
                 // and url from the JSON response.
                 News news = new News(title, sectionName, authorFullName, publicationDate, url);
                 // Add the new {@link News} to the list of newsInfo.
