@@ -17,11 +17,12 @@ public class NewsAdapter extends ArrayAdapter<News> {
      * Constructs a new {@link NewsAdapter}.
      *
      * @param context of the app
-     * @param news is the list of news, which is the data source of the adapter
+     * @param news    is the list of news, which is the data source of the adapter
      */
     public NewsAdapter(Context context, List<News> news) {
         super(context, 0, news);
     }
+
     /**
      * Returns a list item view that displays information about the news at the given position
      * in the list of news.
@@ -66,13 +67,14 @@ public class NewsAdapter extends ArrayAdapter<News> {
             dateView.setText(formattedDate);
             //Set date & time views as visible
             dateView.setVisibility(View.VISIBLE);
-            } else {
+        } else {
             //Set date & time views as gone
             dateView.setVisibility(View.GONE);
-            }
+        }
         // Return the list item view that is now showing the appropriate data
         return listItemView;
     }
+
     /**
      * Return the formatted date string (i.e. "Mar 3, 1984") from a Date object.
      */
